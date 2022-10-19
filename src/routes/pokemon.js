@@ -38,7 +38,7 @@ const router = Router();
      ////////7///////Llamada a la API/////////////////////7
      const dataApi = await Promise.all([
        axios.get("https://pokeapi.co/api/v2/pokemon/?limit=-1&offset=1"),
-       axios.get("https://pokeapi.co/api/v2/pokemon/?limit=20&offset=0")
+       axios.get("https://pokeapi.co/api/v2/pokemon/?limit=40&offset=0")
      ]);
      // console.log(datApi) ---> [{ data: {results:[] } }, { data:{results:[] } }]
      dataArr1 = dataApi[0].data.results;
